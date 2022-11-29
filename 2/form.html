@@ -8,12 +8,12 @@
 </head>
 
 <body class="page__body">
-  <header class="form-header">
+  <header class="main-header">
     <nav class="nav-menu">
       <button class="nav-menu__toggle nav-menu__toggle--close" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
     </nav>
-    <a class="form-header__logo" href="#"><img src="/images/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo" href="#"><img src="/images/header/logo.png" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
@@ -24,7 +24,7 @@
         посещенных вами достопримечательностях.</p>
     </section>
     <section class="review-form">
-      <form class="review-form__main-form">
+      <form class="review-form__main-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="review-form__name name-form">
         <legend class="name-form__title">Представьтесь:</legend>
         <label class="name-form__label">
@@ -47,7 +47,7 @@
           <input class="contact-form__input" type="tel" name="phone" placeholder="Введите телефон" required>
         </label>
         <label class="contact-form__label">
-          <span class="contact-form__name">Контактный телефон*:</span>
+          <span class="contact-form__name">Электронная почта*:</span>
           <input class="contact-form__input" type="email" name="email" placeholder="Введите e-mail" required>
         </label>
       </fieldset>
@@ -84,19 +84,19 @@
               <span class="place-item__description">Мост Дьявола</span>
             </label>
           </li>
-          <li class="place-checkbox__item">
+          <li class="place-checkbox__item place-item">
             <label class="place-item__label" for="bell-hill">
               <input class="place-item__input" type="checkbox" name="place-bell-hill" id="bell-hill" value="bell-hill" checked>
               <span class="place-item__description">Гора-Колокол</span>
             </label>
           </li>
-          <li class="place-checkbox__item">
+          <li class="place-checkbox__item place-item">
             <label class="place-item__label" for="slide-park">
               <input class="place-item__input" type="checkbox" name="place-slide-park" id="slide-park" value="slide-park" checked>
               <span class="place-item__description">Слайд-парк</span>
             </label>
           </li>
-          <li class="place-checkbox__item">
+          <li class="place-checkbox__item place-item">
             <label class="place-item__label" for="red-rock">
               <input class="place-item__input" type="checkbox" name="place-red-rock" id="red-rock" value="red-rock">
               <span class="place-item__description">Красные скалы</span>
@@ -108,7 +108,7 @@
         <legend class="feedback-form__title">Опишите свои эмоции:</legend>
         <textarea class="feedback-form__textarea" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="review-form__button button" type="button">Отправить отзыв</button>
+      <button class="review-form__button button" type="submit">Отправить отзыв</button>
     </form>
     </section>
   </main>
@@ -130,12 +130,12 @@
       </a>
     </div>
   </footer>
-  <div class="modal modal__mistake">
+  <div class="modal modal--mistake">
     <h3 class="modal__title">Что-то пошло не так!</h3>
     <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="modal__button" type="button">OK</button>
   </div>
-  <div class="modal modal__success">
+  <div class="modal modal--success">
     <h3 class="modal__title">Ваш отзыв отправлен!</h3>
     <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
       опубликуем его на сайте.</p>
