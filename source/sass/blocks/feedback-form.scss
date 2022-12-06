@@ -1,0 +1,21 @@
+.feedback-form {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 59px;
+}
+
+.feedback-form__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.feedback-form__textarea {
+  background-color: $background-grey;
+  width: 279px;
+}

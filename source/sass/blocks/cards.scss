@@ -1,0 +1,35 @@
+
+.cards-list {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-item {
+  list-style-type: none;
+}
+
+.cards-item__img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cards-item__title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.cards-item__author {
+  font-size: 12px;
+  text-transform: none;
+  margin: 0;
+}
+
+.cards-item__button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.cards-item__likes {
+  font-size: 14px;
+  font-style: bold;
+}

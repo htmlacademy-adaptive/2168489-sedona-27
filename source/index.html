@@ -4,36 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона - небольшой туристический городок в Аризоне</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="nav-menu">
-      <button class="nav-menu__toggle nav-menu__toggle--close" type="button"><span class="visually-hidden">Открыть
+      <button class="nav-menu__toggle nav-menu__toggle--close" type="button"><span class="visually-hidden">Закрыть
           меню.</span></button>
       <ul class="nav-menu__list">
-        <li class="nav-menu__item"><a>Главная</a></li>
-        <li class="nav-menu__item"><a>Фото и видео</a></li>
-        <li class="nav-menu__item"><a href="form.html">Форма отзыва</a></li>
-        <li class="nav-menu__item"><a>Html Academy</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#"><span class="nav-menu__text">Главная</span></a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#"><span class="nav-menu__text">Фото и видео</span></a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="form.html"><span class="nav-menu__text">Форма отзыва</span></a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="https://htmlacademy.ru"><span class="nav-menu__text">Html Academy</span></a></li>
       </ul>
     </nav>
-    <a class="main-header__logo" href="#"><img src="/images/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo" href="#"><img src="../images/header/logo.png" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
     <section class="intro">
       <div class="intro__content">
-        <img class="intro__content-slogan" src="/images/main/text-index.png" alt="Добро пожаловать в Седону!"
+        <img class="intro__content-slogan" src="../images/main/text-index.png" alt="Добро пожаловать в Седону!"
           width="282" height="214">
+          <svg class="intro__triagle" width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
+            <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
+            </svg>
+
       </div>
-      <h1 class="intro__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="intro__main-title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h1>
       <p class="intro__main-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="benefits">
       <div class="benefits-wrapper">
         <ul class="benefits__list">
-          <li class="benefits__item benefits-item">
+          <li class="benefits__item benefits-item benefits__item--key">
+            <svg class="benefits__item-triagle" width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
+              </svg>
+
             <h2 class="benefits-item__title">
               Настоящий городок
             </h2>
@@ -107,7 +118,7 @@
               </li>
             </ul>
           </li>
-          <li class="benefits__item benefits-item">
+          <li class="benefits__item benefits-item benefits__item--key">
             <h2 class="benefits-item__title">
               Там есть мост дьявола
             </h2>
@@ -152,9 +163,9 @@
   <footer class="footer">
     <h2 class="footer__title">#VisitSedona</h2>
     <ul class="footer__social social">
-      <li class="social__item"><a class="social__link social__link--vk" href="#">ВК</a></li>
-      <li class="social__item"><a class="social__link social__link--tg" href="#">Телеграм</a></li>
-      <li class="social__item"><a class="social__link social__link--yt" href="#">YouTube</a></li>
+      <li class="social__item social__item--vk"><a class="social__link" href="#"></a></li>
+      <li class="social__item social__item--tg"><a class="social__link" href="#"></a></li>
+      <li class="social__item social__item--yt"><a class="social__link" href="#"></a></li>
     </ul>
     <div class="footer__copyright-wrapper copyright">
       <p class="copyright__title">Разработано</p>

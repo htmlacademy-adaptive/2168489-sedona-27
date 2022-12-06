@@ -4,29 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона - ваши фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="nav-menu">
-      <button class="nav-menu__toggle nav-menu__toggle--close" type="button"><span class="visually-hidden">Открыть
+      <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
     </nav>
-    <a class="main-header__logo" href="#"><img src="/images/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo" href="#"><img src="../images/header/logo.png" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
     <section class="catalog-intro">
-      <img class="catalog-intro__img" src="/images/catalog/catalog-sedona.png" alt="Седона." width="229" height="39">
+      <div class="catalog-intro__content">
+      <img class="catalog-intro__img" src="../images/catalog/catalog-sedona.png" alt="Седона." width="229" height="39">
+      <svg class="catalog-intro__triagle" width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
+        <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
+        </svg>
+    </div>
       <h1 class="catalog-intro__main-title">Фото и видео</h1>
       <p class="catalog-intro__main-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
         забыть о политике и экономике.</p>
     </section>
     <section class="catalog-content">
-      <div class="catalog-content__wrapper">
         <ul class="catalog-content__list cards-list">
           <li class="cards-list__item cards-item">
-            <img class="cards-item__img" src="/images/catalog/cards-photo/card-01.jpg" alt="Неродные просторы."
+            <img class="cards-item__img" src="../images/catalog/cards-photo/card-01.jpg" alt="Неродные просторы."
               width="280" height="280">
             <h2 class="cards-item__title">Неродные просторы</h2>
             <p class="cards-item__author">Автор фото: Борис</p>
@@ -42,7 +48,7 @@
             </button>
           </li>
           <li class="cards-list__item cards-item">
-            <img class="cards-item__img" src="/images/catalog/cards-photo/card-02.jpg" alt="Местная растительность."
+            <img class="cards-item__img" src="../images/catalog/cards-photo/card-02.jpg" alt="Местная растительность."
               width="280" height="280">
             <h2 class="cards-item__title">Местная растительность</h2>
             <p class="cards-item__author">Автор фото: Сергей</p>
@@ -58,7 +64,7 @@
             </button>
           </li>
           <li class="cards-list__item cards-item">
-            <img class="cards-item__img" src="/images/catalog/cards-photo/card-03.jpg" alt="Дорога на север."
+            <img class="cards-item__img" src="../images/catalog/cards-photo/card-03.jpg" alt="Дорога на север."
               width="280" height="280">
             <h2 class="cards-item__title">Дорога на север</h2>
             <p class="cards-item__author">Автор фото: Петр</p>
@@ -74,7 +80,7 @@
             </button>
           </li>
           <li class="cards-list__item cards-item">
-            <img class="cards-item__img" src="/images/catalog/cards-photo/card-04.jpg" alt="Мост дьявола." width="280"
+            <img class="cards-item__img" src="../images/catalog/cards-photo/card-04.jpg" alt="Мост дьявола." width="280"
               height="280">
             <h2 class="cards-item__title">Мост дьявола</h2>
             <p class="cards-item__author">Автор фото: Антон</p>
@@ -90,22 +96,21 @@
             </button>
           </li>
         </ul>
-      </div>
     </section>
     <section class="catalog-offer">
       <h2 class="catalog-offer__title">Все еще сомневаетесь?</h2>
       <p class="catalog-offer__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <img class="catalog-offer__video" src="/images/catalog/video.jpg" alt="Видеопрезентация." width="280"
+      <img class="catalog-offer__video" src="../images/catalog/video.jpg" alt="Видеопрезентация." width="280"
         height="170">
     </section>
   </main>
   <footer class="footer">
     <h2 class="footer__title">#VisitSedona</h2>
     <ul class="footer__social social">
-      <li class="social__item"><a class="social__link social__link--vk" href="#">ВК</a></li>
-      <li class="social__item"><a class="social__link social__link--tg" href="#">Телеграм</a></li>
-      <li class="social__item"><a class="social__link social__link--yt" href="#">YouTube</a></li>
+      <li class="social__item social__item--vk"><a class="social__link" href="#"></a></li>
+      <li class="social__item social__item--tg"><a class="social__link" href="#"></a></li>
+      <li class="social__item social__item--yt"><a class="social__link" href="#"></a></li>
     </ul>
     <div class="footer__copyright-wrapper copyright">
       <p class="copyright__title">Разработано</p>

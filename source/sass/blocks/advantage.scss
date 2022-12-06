@@ -1,0 +1,21 @@
+.advantage-list {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  color: #000000;
+  list-style-type: none;
+}
+
+.advantage-list__item {
+  padding-top: 15px;
+  background-color: #ffffff;
+}
+
+.advantage-item__title {
+  font-size: $title-font-size;
+  color: #000000;
+}
+
+.advantage-item__subtitle {
+  margin: 0;
+}
