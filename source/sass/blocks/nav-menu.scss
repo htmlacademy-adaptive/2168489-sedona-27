@@ -4,7 +4,7 @@
 }
 
 .nav-menu__toggle {
-  background-image: url("/images/header/menu/menu-button.svg");
+  background-image: url("../img/images/header/menu/menu-button.svg");
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
@@ -13,7 +13,7 @@
 
 
   &--close {
-    background-image: url("/images/header/menu/menu-close.svg");
+    background-image: url("../img/images/header/menu/menu-close.svg");
     background-repeat: no-repeat;
     background-color: $background-blue;
   }

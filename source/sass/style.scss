@@ -1,16 +1,19 @@
-@import "blocks/varibles.scss";
-@import "blocks/page-body.scss";
+@import "varibles.scss";
+@import "fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/button.scss";
 @import "blocks/main-header.scss";
 @import "blocks/nav-menu.scss";
 @import "blocks/intro.scss";
 @import "blocks/benifits.scss";
-@import "blocks/advantage.scss";
+@import "blocks/advantage-list.scss";
 @import "blocks/offer.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/catalog-intro.scss";
-@import "blocks/cards.scss";
+@import "blocks/cards-list.scss";
 @import "blocks/catalog-offer.scss";
 @import "blocks/form-intro.scss";
 @import "blocks/review-form.scss";
@@ -20,4 +23,3 @@
 @import "blocks/place-form.scss";
 @import "blocks/feedback-form.scss";
 @import "blocks/modal.scss";
-

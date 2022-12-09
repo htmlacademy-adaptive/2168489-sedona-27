@@ -15,13 +15,14 @@
   line-height: 26px;
 }
 
-.place-item__description {
+.place-form__description {
   font-size: 14px;
   font-weight: 700;
   text-transform: none;
 }
 
-.place-checkbox {
+.place-form__item {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
