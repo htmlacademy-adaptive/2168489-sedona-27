@@ -2,16 +2,27 @@
   font-family: "PTSans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/PTSans-Regular.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PTSans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/PTSans-Bold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
   width: 320px;
@@ -27,17 +38,6 @@
   line-height: 21px;
   text-transform: uppercase;
   background-color: #ffffff;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .button {
@@ -68,7 +68,7 @@
 }
 
 .nav-menu__toggle {
-  background-image: url("/images/header/menu/menu-button.svg");
+  background-image: url("../img/images/header/menu/menu-button.svg");
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
@@ -76,7 +76,7 @@
   background-color: #ffffff;
 }
 .nav-menu__toggle--close {
-  background-image: url("/images/header/menu/menu-close.svg");
+  background-image: url("../img/images/header/menu/menu-close.svg");
   background-repeat: no-repeat;
   background-color: #81b3d2;
 }
@@ -114,7 +114,7 @@
 }
 
 .intro__content {
-  background-image: url("/images/main/intro-bg.jpg");
+  background-image: url("../img/images/main/intro-bg.jpg");
   background-repeat: no-repeat;
   width: 901px;
   height: 389px;
@@ -186,20 +186,20 @@
   z-index: 0;
 }
 
-.benefits-item__title {
+.benefits__item-title {
   text-align: center;
   padding-top: 24px;
   font-size: 18px;
   margin: 0;
 }
 
-.benefits-item__number {
+.benefits__item-number {
   text-align: center;
   margin-top: 11px;
   margin-bottom: 17px;
 }
 
-.benefits-item__subtitle {
+.benefits__item-subtitle {
   text-align: center;
   margin: 0;
   padding-bottom: 24px;
@@ -224,12 +224,12 @@
   background-color: #ffffff;
 }
 
-.advantage-item__title {
+.advantage-list__item-title {
   font-size: 18px;
   color: #000000;
 }
 
-.advantage-item__subtitle {
+.advantage-list__item-subtitle {
   margin: 0;
 }
 
@@ -279,13 +279,13 @@
   background-position: center;
 }
 .social__item--vk {
-  background-image: url("/images/social/vk.svg");
+  background-image: url("../img/images/social/vk.svg");
 }
 .social__item--tg {
-  background-image: url("/images/social/tg.svg");
+  background-image: url("../img/images/social/tg.svg");
 }
 .social__item--yt {
-  background-image: url("/images/social/yt.svg");
+  background-image: url("../img/images/social/yt.svg");
 }
 
 .copyright {
@@ -305,7 +305,7 @@
 }
 
 .catalog-intro__content {
-  background-image: url("/images/main/intro-bg.jpg");
+  background-image: url("../img/images/main/intro-bg.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: 214px;
@@ -346,32 +346,32 @@
   padding: 0;
 }
 
-.cards-item {
+.cards-list__item {
   list-style-type: none;
 }
 
-.cards-item__img {
+.cards-list__item-img {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.cards-item__title {
+.cards-list__item-title {
   font-size: 14px;
   margin: 0;
 }
 
-.cards-item__author {
+.cards-list__item-author {
   font-size: 12px;
   text-transform: none;
   margin: 0;
 }
 
-.cards-item__button {
+.cards-list__item-button {
   border: none;
   background-color: #ffffff;
 }
 
-.cards-item__likes {
+.cards-list__item-likes {
   font-size: 14px;
   font-style: bold;
 }
@@ -397,7 +397,7 @@
 }
 
 .form-intro__content {
-  background-image: url("/images/main/intro-bg.jpg");
+  background-image: url("../img/images/main/intro-bg.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: 214px;
@@ -504,16 +504,16 @@
   line-height: 26px;
 }
 
-.rate-radio {
+.rate-form__list {
   margin: 0;
   padding: 0;
 }
 
-.rate-radio__item {
+.rate-form__item {
   list-style-type: none;
 }
 
-.rate-radio__description {
+.rate-form__label {
   font-size: 14px;
   font-weight: 700;
   text-transform: none;
@@ -536,13 +536,14 @@
   line-height: 26px;
 }
 
-.place-item__description {
+.place-form__description {
   font-size: 14px;
   font-weight: 700;
   text-transform: none;
 }
 
-.place-checkbox {
+.place-form__item {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
