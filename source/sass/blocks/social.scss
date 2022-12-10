@@ -1,0 +1,28 @@
+.social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  list-style-type: none;
+  width: 48px;
+  height: 48px;
+  background-color: $background-blue;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../img/images/social/vk.svg");
+  }
+
+  &--tg {
+    background-image: url("../img/images/social/tg.svg");
+  }
+
+  &--yt {
+    background-image: url("../img/images/social/yt.svg");
+  }
+}
