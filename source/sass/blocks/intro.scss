@@ -4,22 +4,15 @@
 }
 
 .intro__content {
-  background-image: url("/source/img/images/main/intro-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 389px;
-}
-
-.intro__triagle {
-  display: block;
-  z-index: 1;
-  position: absolute;
-  top: 308px;
-  left: -450px;
+  min-height: 400px;
+  background-image: url("/img/images/main/intro-triangle.svg"), url("/img/images/main/intro-bg.jpg");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #ffffff;
 }
 
 .intro__content-slogan {
   width: 240px;
-  margin-top: 8px;
   margin-left: 40px;
 }
 
@@ -39,8 +32,8 @@
   width: 265px;
   text-align: center;
   margin-top: 35px;
-  font-weight: 400;
   margin-left: 27px;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,9 +42,11 @@
   }
 
   .intro__content {
-    background-image: url("/source/img/images/main/into-bg-t.jpg");
-    background-size: 768px 518px;
-    padding-bottom: 90px;
+    min-height: 518px;
+    background-image: url("/img/images/main/intro-triangle-t.svg"), url("/img/images/main/into-bg-t.jpg");
+    background-position: center bottom, center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #ffffff;
   }
 
   .intro__content-slogan {
@@ -61,19 +56,17 @@
     height: 350px;
   }
 
-  .intro__triagle {
-    top: 470px;
-    left: -210px;
-  }
-
   .intro__main-title {
     width: 524px;
-    margin-left: 154px;
+    margin-top: 47px;
+    margin-left: 124px;
   }
 
   .intro__main-description {
     width: 524px;
-    margin-left: 154px;
+    margin-top: 36px;
+    margin-left: 124px;
+    margin-bottom: 55px;
   }
 }
 
@@ -83,9 +76,10 @@
   }
 
   .intro__content {
-    background-image: url("/source/img/images/main/into-bg-d.jpg");
-    background-size: 1200px 589px;
-    padding-bottom: 210px;
+    background-image: url("/img/images/main/intro-triangle-d.svg"), url("/img/images/main/into-bg-d.jpg");
+    background-position: center bottom, center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #ffffff;
   }
 
   .intro__content-slogan {
@@ -93,18 +87,15 @@
     margin-left: 370px;
   }
 
-  .intro__triagle {
-    top: 535px;
-    left: 0;
-  }
-
   .intro__main-title {
     width: 524px;
+    margin-top: 59px;
     margin-left: 354px;
   }
 
   .intro__main-description {
     width: 524px;
     margin-left: 354px;
+    margin-bottom: 44px;
   }
 }

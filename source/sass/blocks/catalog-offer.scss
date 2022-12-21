@@ -10,6 +10,51 @@
 }
 
 .catalog-offer__video {
+  margin-top: 27px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-offer__title {
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 39px;
+    font-size: 30px;
+  }
+
+  .catalog-offer__description {
+    text-align: center;
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .catalog-offer__video {
+    width: 648px;
+    margin-top: 67px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-offer__title {
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 39px;
+    font-size: 30px;
+  }
+
+  .catalog-offer__description {
+    text-align: center;
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .catalog-offer__video {
+    width: 800px;
+    margin-top: 64px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }

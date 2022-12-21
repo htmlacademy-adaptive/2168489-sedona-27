@@ -10,7 +10,6 @@
 .benefits__item {
   list-style-type: none;
   width: 320px;
-  height: 100%;
   background-color: $background-grey;
   margin: 0;
   padding: 0;
@@ -22,21 +21,12 @@
     border-bottom: none;
   }
 
-  &:nth-last-of-type(1) {
-    border-bottom: none;
-    margin-bottom: 38px;
+  &--first {
+    padding-top: 50px;
+    background-image: url("/img/images/main/benefits-item-triagle.svg");
+    background-repeat: no-repeat;
+    background-position: top;
   }
-
-  &:nth-of-type(1) {
-    padding-top: 33px;
-  }
-}
-
-.benefits__item-triagle {
-  position: absolute;
-  top: -15px;
-  left: 0;
-  z-index: 0;
 }
 
 .benefits__item-title {
@@ -62,7 +52,6 @@
 .benefits__item-img {
   display: block;
   width: 320px;
-  height: 240px;
 }
 
 @media (min-width: $tablet-width) {
@@ -74,38 +63,44 @@
   .benefits__item {
     width: 256px;
 
-    &:nth-of-type(1) {
+    &--first {
       padding-top: 0;
       width: 768px;
+      background-image: none;
     }
 
-    &:nth-of-type(2) {
+    &--second {
       width: 768px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
     }
 
-    &:nth-of-type(3),
-    &:nth-of-type(4),
-    &:nth-of-type(5) {
+    &--other {
       width: 256px;
-      border: none;
-    }
-
-    .benefits__item-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .benefits__item-img {
-      width: 512px;
       height: 256px;
+      border: none;
     }
   }
 
-  .benefits__item-triagle {
-    display: none;
+  .benefits__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits__item-text {
+    width: 190px;
+    margin: 33px;
+  }
+
+  .benefits__item-title {
+    width: 150px;
+    margin-left: 20px;
+    font-size: 21px;
+  }
+
+  .benefits__item-subtitle {
+    padding: 0;
   }
 }
 
@@ -118,24 +113,20 @@
   .benefits__item {
     width: 400px;
 
-    &:nth-of-type(1) {
+    &--first {
       padding-top: 0;
       width: 1200px;
     }
 
-    &:nth-of-type(2) {
+    &--second {
       width: 1200px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
     }
 
-    &:nth-of-type(3),
-    &:nth-of-type(4),
-    &:nth-of-type(5) {
+    &--other {
       width: 400px;
-      padding-top: 63px;
-      padding-bottom: 49px;
       border: none;
     }
   }
@@ -145,13 +136,13 @@
     justify-content: space-between;
   }
 
-
-  .benefits__item-img {
-    width: 800px;
-    height: 256px;
+  .benefits__item-text {
+    width: 278px;
+    margin: 50px;
   }
 
-  .benefits__item-triagle {
-    display: none;
+  .benefits__item-title {
+    margin-left: 60px;
+    font-size: 21px;
   }
 }
