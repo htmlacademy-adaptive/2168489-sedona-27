@@ -1,15 +1,16 @@
 .cards-list {
-  margin: 0;
+  width: 280px;
+  margin: 0 20px;
   padding: 0;
 }
 
 .cards-list__item {
   list-style-type: none;
+  margin-bottom: 25px;
 }
 
 .cards-list__item-img {
-  margin-left: 20px;
-  margin-right: 20px;
+  display: block;
 }
 
 .cards-list__item-title {
@@ -25,10 +26,105 @@
 
 .cards-list__item-button {
   border: none;
-  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
 }
 
 .cards-list__item-likes {
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  font-style: bold;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .cards-list {
+    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .cards-list__item {
+    width: 324px;
+    margin: 0;
+
+    &--main {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      width: 648px;
+    }
+  }
+
+  .cards-list__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 284px;
+    background-color: #f2f2f2;
+    min-height: 80px;
+
+    &--main {
+      width: 610px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards-list {
+    width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+  }
+
+  .cards-list__item {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+
+    &--main {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      width: 1200px;
+    }
+  }
+
+  .cards-list__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 360px;
+    min-height: 267px;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+    top: 105px;
+    color: #ffffff;
+
+    &--main {
+      width: 1160px;
+      min-height: 400px;
+      top: 50px;
+    }
+  }
+
+  .cards-list__item-likes {
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
 }
