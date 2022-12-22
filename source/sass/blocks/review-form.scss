@@ -1,8 +1,63 @@
+.review-form {
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .review-form__button {
   width: 280px;
   height: 58px;
   margin-top: 32px;
   margin-bottom: 49px;
-  margin-right: 18px;
-  margin-left: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .review-form__main-form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .review-form__name {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .review-form__rate {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .review-form__place {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .review-form__feedback {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .review-form__button {
+    width: 324px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    width: 960px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .review-form__button {
+    width: 384px;
+    margin-left: 94px;
+  }
 }
