@@ -10,12 +10,13 @@
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 
 .name-form__name {
+  font-size: 14px;
   display: block;
   color: #333333;
 }
@@ -27,6 +28,12 @@
   border: none;
   padding-left: 16px;
   margin-bottom: 16px;
+}
+
+.name-form__input::placeholder {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,10 +57,7 @@
 
   .name-form__input {
     width: 430px;
-    height: 58px;
     background-color: #f2f2f2;
-    border: none;
-    color: #000000;
     padding-left: 16px;
     margin-bottom: 16px;
   }
