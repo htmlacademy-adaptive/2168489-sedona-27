@@ -10,7 +10,7 @@
 <body class="page__body">
   <div class="container">
   <header class="main-header">
-    <nav class="nav-menu">
+    <nav class="nav-menu nav-menu--closed nav-menu--nojs">
       <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
           <ul class="nav-menu__list">
@@ -61,11 +61,11 @@
         <div class="review-form__wrapper review-form__wrapper-contacts">
       <fieldset class="review-form__contacts contact-form">
         <legend class="contact-form__title">Контактная информация:</legend>
-        <label class="contact-form__label">
+        <label class="contact-form__label contact-form__label--phone">
           <span class="contact-form__name">Контактный телефон*:</span>
           <input class="contact-form__input" type="tel" name="phone" placeholder="Введите телефон" required>
         </label>
-        <label class="contact-form__label">
+        <label class="contact-form__label contact-form__label--mail">
           <span class="contact-form__name">Электронная почта*:</span>
           <input class="contact-form__input" type="email" name="email" placeholder="Введите e-mail" required>
         </label>
@@ -142,6 +142,7 @@
       </fieldset>
         </div>
       <button class="review-form__button button" type="submit">Отправить отзыв</button>
+      <span class="review-form__required">* — обязательные поля</span>
     </form>
     </section>
   </main>
@@ -187,5 +188,6 @@
 </div>
 </div>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

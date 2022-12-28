@@ -10,7 +10,9 @@
   }
 
   .nav-menu--nojs .nav-menu__list {
+    display: block;
     min-height: 0;
+    padding-top: 100px;
   }
 
   .nav-menu--nojs .nav-menu__item {

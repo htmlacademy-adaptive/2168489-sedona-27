@@ -21,6 +21,13 @@
   width: 279px;
 }
 
+.feedback-form__textarea::placeholder {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+  font-weight: 700;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form {
     padding: 0;
