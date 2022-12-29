@@ -1,6 +1,6 @@
 .feedback-form {
   border: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-top: 59px;
 }
@@ -10,7 +10,7 @@
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
@@ -21,8 +21,16 @@
   width: 279px;
 }
 
+.feedback-form__textarea::placeholder {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+  font-weight: 700;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form {
+    padding: 0;
     border-top: 1px solid #dbdbdb;
   }
 

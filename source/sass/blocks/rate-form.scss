@@ -1,16 +1,15 @@
 .rate-form {
   border: none;
-  padding: 0;
-  margin: 0;
+  padding: 0 20px;
   margin-top: 59px;
 }
 
 .rate-form__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
@@ -22,16 +21,43 @@
 
 .rate-form__item {
   list-style-type: none;
+  margin-bottom: 36px;
 }
 
 .rate-form__label {
   font-size: 14px;
   font-weight: 700;
   text-transform: none;
+  position: relative;
 }
+
+
+.rate-form__ratio {
+  display: block;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  bottom: -12px;
+}
+
+.rate-form__input[type="radio"]:checked + .rate-form__ratio {
+  background-image: url("/img/images/form/point.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.rate-form__description {
+  font-size: 18px;
+  margin-left: 70px;
+}
+
 
 @media (min-width: $tablet-width) {
   .rate-form {
+    padding: 0;
     border-top: 1px solid #dbdbdb;
   }
 
@@ -53,10 +79,6 @@
     font-size: 21px;
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  .rate-form__description {
-    font-size: 18px;
   }
 }
 

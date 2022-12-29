@@ -11,7 +11,7 @@
 <body class="page__body">
   <div class="container">
   <header class="main-header">
-    <nav class="nav-menu">
+    <nav class="nav-menu nav-menu--closed nav-menu--nojs">
       <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
           <ul class="nav-menu__list">
@@ -50,7 +50,7 @@
                 <div class="cards-list__item-text">
             <h2 class="cards-list__item-title">Неродные просторы</h2>
             <p class="cards-list__item-author">Автор фото: Борис</p>
-               </div>
+                </div>
             <button class="cards-list__item-button cards-list__item-button--active" type="button"><span
                 class="visually-hidden">Кнопка
                 лайка.</span><svg class="cards-list__item-button-like" width="23" height="21" viewBox="0 0 23 21" fill="none"
@@ -129,8 +129,11 @@
       <h2 class="catalog-offer__title">Все еще сомневаетесь?</h2>
       <p class="catalog-offer__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <img class="catalog-offer__video" src="img/images/catalog/video.jpg" alt="Видеопрезентация." width="280"
-        height="170">
+      <div class="catalog-offer__presentation">
+      <button class="catalog-offer__play"><span class="visually-hidden">Воспроизвести.</span></button>
+      <video class="catalog-offer__video" poster="img/images/catalog/video.jpg" width="800"
+        height="500"></video>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -152,6 +155,7 @@
     </div>
   </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

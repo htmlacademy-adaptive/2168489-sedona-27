@@ -10,7 +10,7 @@
 <body class="page__body">
   <div class="container">
   <header class="main-header">
-    <nav class="nav-menu">
+    <nav class="nav-menu nav-menu--closed nav-menu--nojs">
       <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
           <ul class="nav-menu__list">
@@ -41,6 +41,7 @@
     </section>
     <section class="review-form">
       <form class="review-form__main-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="review-form__wrapper review-form__wrapper-name">
       <fieldset class="review-form__name name-form">
         <legend class="name-form__title">Представьтесь:</legend>
         <label class="name-form__label">
@@ -56,75 +57,92 @@
           <input class="name-form__input" type="text" name="patronymic" placeholder="Викторович">
         </label>
       </fieldset>
+        </div>
+        <div class="review-form__wrapper review-form__wrapper-contacts">
       <fieldset class="review-form__contacts contact-form">
         <legend class="contact-form__title">Контактная информация:</legend>
-        <label class="contact-form__label">
+        <label class="contact-form__label contact-form__label--phone">
           <span class="contact-form__name">Контактный телефон*:</span>
           <input class="contact-form__input" type="tel" name="phone" placeholder="Введите телефон" required>
         </label>
-        <label class="contact-form__label">
+        <label class="contact-form__label contact-form__label--mail">
           <span class="contact-form__name">Электронная почта*:</span>
           <input class="contact-form__input" type="email" name="email" placeholder="Введите e-mail" required>
         </label>
       </fieldset>
+        </div>
+        <div class="review-form__wrapper review-form__wrapper-rate">
       <fieldset class="review-form__rate rate-form">
         <legend class="rate-form__title">Ваше общее впечатление:</legend>
         <ul class="rate-form__list">
           <li class="rate-form__item">
             <label class="rate-form__label">
-              <input class="rate-form__input" type="radio" name="rate-good" value="good" checked>
+              <input class="visually-hidden rate-form__input" type="radio" name="rate" value="good" checked>
+              <span class="rate-form__ratio"></span>
               <span class="rate-form__description">Скорее положительно</span>
             </label>
           </li>
           <li class="rate-form__item">
             <label class="rate-form__label">
-              <input class="rate-form__input" type="radio" name="rate-bad" value="bad">
+              <input class="visually-hidden rate-form__input" type="radio" name="rate" value="bad">
+              <span class="rate-form__ratio"></span>
               <span class="rate-form__description">Скорее отрицальное</span>
             </label>
           </li>
           <li class="rate-form__item">
             <label class="rate-form__label">
-              <input class="rate-form__input" type="radio" name="rate-dontknow" value="dontknow">
+              <input class="visually-hidden rate-form__input" type="radio" name="rate" value="dontknow">
+              <span class="rate-form__ratio"></span>
               <span class="rate-form__description">Затрудняюсь ответить</span>
             </label>
           </li>
         </ul>
       </fieldset>
+        </div>
+        <div class="review-form__wrapper review-form__wrapper-place">
       <fieldset class="review-form__place place-form">
         <legend class="place-form__title">Посещенные<br>достопримечательности:</legend>
         <ul class="place-form__list">
           <li class="place-form__item">
             <label class="place-form__label" for="devils-bridge">
-              <input class="place-form__input" type="checkbox" name="place-devils-bridge" id="devils-bridge" value="devils-bridge"
+              <input class="visually-hidden place-form__input" type="checkbox" name="place-devils-bridge" id="devils-bridge" value="devils-bridge"
                 checked>
+                <span class="place-form__checkbox"></span>
               <span class="place-form__description">Мост Дьявола</span>
             </label>
           </li>
           <li class="place-form__item">
             <label class="place-form__label" for="bell-hill">
-              <input class="place-form__input" type="checkbox" name="place-bell-hill" id="bell-hill" value="bell-hill" checked>
+              <input class="visually-hidden place-form__input" type="checkbox" name="place-bell-hill" id="bell-hill" value="bell-hill" checked>
+              <span class="place-form__checkbox"></span>
               <span class="place-form__description">Гора-Колокол</span>
             </label>
           </li>
           <li class="place-form__item">
             <label class="place-form__label" for="slide-park">
-              <input class="place-form__input" type="checkbox" name="place-slide-park" id="slide-park" value="slide-park" checked>
+              <input class="visually-hidden place-form__input" type="checkbox" name="place-slide-park" id="slide-park" value="slide-park" checked>
+              <span class="place-form__checkbox"></span>
               <span class="place-form__description">Слайд-парк</span>
             </label>
           </li>
           <li class="place-form__item">
             <label class="place-form__label" for="red-rock">
-              <input class="place-form__input" type="checkbox" name="place-red-rock" id="red-rock" value="red-rock">
+              <input class="visually-hidden place-form__input" type="checkbox" name="place-red-rock" id="red-rock" value="red-rock">
+              <span class="place-form__checkbox"></span>
               <span class="place-form__description">Красные скалы</span>
             </label>
           </li>
         </ul>
       </fieldset>
+        </div>
+        <div class="review-form__wrapper review-form__wrapper-feedback">
       <fieldset class="review-form__feedback feedback-form">
         <legend class="feedback-form__title">Опишите свои эмоции:</legend>
         <textarea class="feedback-form__textarea" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
+        </div>
       <button class="review-form__button button" type="submit">Отправить отзыв</button>
+      <span class="review-form__required">* — обязательные поля</span>
     </form>
     </section>
   </main>
@@ -170,5 +188,6 @@
 </div>
 </div>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

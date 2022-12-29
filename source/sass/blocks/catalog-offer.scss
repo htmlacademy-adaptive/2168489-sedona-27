@@ -1,5 +1,6 @@
 .catalog-offer__title {
   text-align: center;
+  margin-top: 35px;
   margin-bottom: 37px;
   font-size: $title-font-size;
 }
@@ -9,52 +10,77 @@
   margin: 0;
 }
 
-.catalog-offer__video {
+.catalog-offer__presentation {
+  position: relative;
+  width: 280px;
+  height: 177px;
   margin-top: 27px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
+.catalog-offer__video {
+  width: 280px;
+  height: 177px;
+}
+
+.catalog-offer__play {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url("/img/images/catalog/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-offer__title {
-    text-align: center;
     margin-top: 58px;
     margin-bottom: 39px;
     font-size: 30px;
   }
 
   .catalog-offer__description {
-    text-align: center;
     width: 445px;
     margin: 0 auto;
   }
 
-  .catalog-offer__video {
+  .catalog-offer__presentation {
     width: 648px;
+    height: 500px;
     margin-top: 67px;
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  .catalog-offer__video {
+    width: 648px;
+    height: 500px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-offer__title {
-    text-align: center;
-    margin-top: 58px;
-    margin-bottom: 39px;
-    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 38px;
   }
 
   .catalog-offer__description {
-    text-align: center;
     width: 445px;
     margin: 0 auto;
   }
 
-  .catalog-offer__video {
+  .catalog-offer__presentation {
     width: 800px;
     margin-top: 64px;
     margin-left: 200px;
     margin-right: 200px;
+  }
+
+  .catalog-offer__video {
+    width: 800px;
   }
 }

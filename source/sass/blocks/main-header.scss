@@ -12,6 +12,7 @@
 @media (min-width: $tablet-width) {
   .main-header__logo {
     left: 300px;
+    z-index: 1;
   }
 }
 

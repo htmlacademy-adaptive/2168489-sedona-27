@@ -1,8 +1,16 @@
 .place-form {
   border: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-top: 59px;
+}
+
+.place-form__list {
+  padding: 0;
+}
+
+.place-form__label {
+  position: relative;
 }
 
 .place-form__title {
@@ -10,35 +18,53 @@
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 
+.place-form__checkbox {
+  display: block;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  bottom: -12px;
+}
+
+.place-form__input[type="checkbox"]:checked + .place-form__checkbox {
+  background-image: url("/img/images/form/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .place-form__description {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: none;
+  margin-left: 56px;
 }
 
 .place-form__item {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 36px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .place-form {
+    padding: 0;
     border-top: 1px solid #dbdbdb;
   }
 
   .place-form__list {
-    display: flex;
-    justify-content: space-between;
+    width: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-left: 153px;
-    padding-right: 153px;
-    flex-wrap: wrap;
+    margin: 28px auto 0;
   }
 
   .place-form__label {
@@ -59,7 +85,14 @@
 
 @media (min-width: $desktop-width) {
   .place-form__list {
-    padding-left: 45px;
-    padding-right: 45px;
+    min-width: 885px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .place-form__title {
+    margin-bottom: 60px;
   }
 }
