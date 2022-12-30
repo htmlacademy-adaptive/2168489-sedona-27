@@ -15,13 +15,13 @@
       <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть
           меню.</span></button>
           <ul class="nav-menu__list">
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#"><span class="nav-menu__text">Главная</span></a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#"><span class="nav-menu__text">Фото и видео</span></a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="index.html"><span class="nav-menu__text">Главная</span></a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link nav-menu__link--current"><span class="nav-menu__text">Фото и видео</span></a></li>
             <li class="nav-menu__item"><a class="nav-menu__link" href="form.html"><span class="nav-menu__text">Форма отзыва</span></a></li>
             <li class="nav-menu__item"><a class="nav-menu__link" href="https://htmlacademy.ru"><span class="nav-menu__text">Html Academy</span></a></li>
           </ul>
     </nav>
-    <a class="main-header__logo" href="#"><img src="img/images/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo" href="index.html"><img src="img/images/header/logo.png" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
@@ -44,8 +44,17 @@
     <section class="catalog-content">
         <ul class="catalog-content__list cards-list">
           <li class="cards-list__item cards-list__item--main">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-01.jpg" alt="Неродные просторы."
+            <div class="cards-list__item-img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="/img/images/cards-photo/card-01-d.jpg 1x, img/images/catalog/cards-photo/card-01-d@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="img/images/catalog/cards-photo/card-01-t.jpg 1x, img/images/catalog/cards-photo/card-01-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-01-m.jpg"
+            srcset="img/images/catalog/cards-photo/card-01-m@2x.jpg 2x" alt="Неродные просторы."
               width="280" height="280">
+            </picture>
+          </div>
               <div class="cards-list__item-wrapper cards-list__item-wrapper--main">
                 <div class="cards-list__item-text">
             <h2 class="cards-list__item-title">Неродные просторы</h2>
@@ -64,8 +73,17 @@
               </div>
           </li>
           <li class="cards-list__item">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-02.jpg" alt="Местная растительность."
-              width="280" height="280">
+            <div class="cards-list__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/images/catalog/cards-photo/card-02-d.jpg 2x, img/images/catalog/cards-photo/card-02-d@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/images/catalog/cards-photo/card-02-t.jpg 1x, img/images/catalog/cards-photo/card-02-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-02-m.jpg"
+            srcset="img/images/catalog/cards-photo/card-02-m@2x.jpg 2x"
+             alt="Местная растительность." width="280" height="280">
+              </picture>
+              </div>
               <div class="cards-list__item-wrapper">
                 <div class="cards-list__item-text">
             <h2 class="cards-list__item-title">Местная растительность</h2>
@@ -84,8 +102,18 @@
               </div>
           </li>
           <li class="cards-list__item">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-03.jpg" alt="Дорога на север."
+            <div class="cards-list__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/images/catalog/cards-photo/card-03-d.jpg 2x, img/images/catalog/cards-photo/card-03-d@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/images/catalog/cards-photo/card-03-t.jpg 1x, img/images/catalog/cards-photo/card-03-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-03-m.jpg"
+            srcset="img/images/catalog/cards-photo/card-03-m@2x.jpg 2x"
+            alt="Дорога на север."
               width="280" height="280">
+              </picture>
+            </div>
               <div class="cards-list__item-wrapper">
                 <div class="cards-list__item-text">
             <h2 class="cards-list__item-title">Дорога на север</h2>
@@ -104,8 +132,17 @@
               </div>
           </li>
           <li class="cards-list__item">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-04.jpg" alt="Мост дьявола." width="280"
+            <div class="cards-list__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/images/catalog/cards-photo/card-04-d.jpg 2x, img/images/catalog/cards-photo/card-04-d@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/images/catalog/cards-photo/card-04-t.jpg 1x, img/images/catalog/cards-photo/card-04-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-04-m.jpg" srcset="img/images/catalog/cards-photo/card-04-m@2x.jpg 2x"
+             alt="Мост дьявола." width="280"
               height="280">
+              </picture>
+              </div>
               <div class="cards-list__item-wrapper">
                 <div class="cards-list__item-text">
             <h2 class="cards-list__item-title">Мост дьявола</h2>

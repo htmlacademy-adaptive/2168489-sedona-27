@@ -47,6 +47,14 @@
   background-repeat: no-repeat;
   border-radius: 50%;
   background-position: center;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .rate-form__description {

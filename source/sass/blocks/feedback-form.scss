@@ -18,14 +18,25 @@
 .feedback-form__textarea {
   border: none;
   background-color: $background-grey;
-  width: 279px;
-}
-
-.feedback-form__textarea::placeholder {
+  width: 250px;
   padding-left: 16px;
   padding-top: 16px;
   padding-right: 16px;
   font-weight: 700;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border: #e5e5e5 4px solid;
+  }
+}
+
+.feedback-form__textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: $tablet-width) {
