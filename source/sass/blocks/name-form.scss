@@ -2,13 +2,13 @@
   border: none;
   padding: 0 20px;
   margin: 0;
-  margin-top: 53px;
+  margin-top: 20px;
+  margin-bottom: 19px;
 }
 
 .name-form__title {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
+  margin-bottom: 22px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -16,7 +16,9 @@
 }
 
 .name-form__name {
-  font-size: 14px;
+  margin-left: 14px;
+  line-height: 21px;
+  font-size: 15px;
   display: block;
   color: #333333;
 }
@@ -27,8 +29,8 @@
   background-color: #f2f2f2;
   border: none;
   padding-left: 16px;
-  margin-bottom: 16px;
-  font-size: 18px;
+  margin-bottom: 14px;
+  font-size: 16px;
   font-weight: 700;
 
   &:hover {
@@ -49,25 +51,33 @@
 @media (min-width: $tablet-width) {
   .name-form {
     width: 343px;
-    margin-top: 53px;
+    margin-top: 75px;
     border-right: 1px solid #dbdbdb;
     padding: 0;
   }
 
   .name-form__title {
+    display: block;
     font-size: 21px;
+    line-height: 26px;
+    margin-left: -10px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .name-form {
     width: 543px;
-    margin-top: 53px;
+    margin-top: 40px;
     border-right: 1px solid #dbdbdb;
   }
 
+  .name-form__title {
+    margin-left: -28px;
+  }
+
   .name-form__input {
-    width: 430px;
+    width: 410px;
     background-color: #f2f2f2;
     padding-left: 16px;
     margin-bottom: 16px;

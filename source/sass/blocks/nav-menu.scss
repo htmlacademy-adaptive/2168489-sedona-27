@@ -33,11 +33,11 @@
   }
 
   .nav-menu--closed .nav-menu__toggle {
-    background-image: url("../img/images/header/menu/menu-button.svg");
+    background-image: url("../img/header/menu/menu-button.svg");
   }
 
   .nav-menu--opened .nav-menu__toggle {
-    background-image: url("../img/images/header/menu/menu-close.svg");
+    background-image: url("../img/header/menu/menu-close.svg");
   }
 
   .nav-menu--opened .nav-menu__list {
@@ -127,6 +127,10 @@
   .nav-menu__item {
     background-color: #ffffff;
     box-shadow: none;
+
+    &:nth-of-type(2) {
+      margin-right: 240px;
+    }
   }
 
   .nav-menu__link {

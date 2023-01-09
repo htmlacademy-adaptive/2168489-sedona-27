@@ -1,7 +1,8 @@
 .rate-form {
   border: none;
   padding: 0 20px;
-  margin-top: 59px;
+  margin-top: 28px;
+  margin-bottom: 1px;
 }
 
 .rate-form__title {
@@ -21,7 +22,7 @@
 
 .rate-form__item {
   list-style-type: none;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .rate-form__label {
@@ -43,7 +44,7 @@
 }
 
 .rate-form__input[type="radio"]:checked + .rate-form__ratio {
-  background-image: url("/img/images/form/point.svg");
+  background-image: url("/img/form/point.svg");
   background-repeat: no-repeat;
   border-radius: 50%;
   background-position: center;
@@ -58,8 +59,10 @@
 }
 
 .rate-form__description {
+  display: block;
   font-size: 18px;
-  margin-left: 70px;
+  margin-left: 60px;
+  margin-bottom: 10px;
 }
 
 
@@ -78,9 +81,10 @@
   }
 
   .rate-form__label {
+    margin-left: -10px;
     display: block;
     width: 264px;
-    margin-bottom: 16px;
+    margin-bottom: -20px;
   }
 
   .rate-form__title {
@@ -88,11 +92,28 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .rate-form__description {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .rate-form__title {
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 45px;
+  }
+
+  .rate-form__list {
+    padding-left: 60px;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+
+  .rate-form__description {
+    margin-left: 60px;
   }
 }

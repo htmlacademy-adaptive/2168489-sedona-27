@@ -6,9 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - ваши фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body class="page__body">
+  <svg style="display: none;">
+    <symbol viewBox="0 0 28 33" id="academy-icon">
+      <path
+        d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z"
+        fill="black" />
+      </symbol>
+  </svg>
   <div class="container">
   <header class="main-header">
     <nav class="nav-menu nav-menu--closed nav-menu--nojs">
@@ -21,7 +30,7 @@
             <li class="nav-menu__item"><a class="nav-menu__link" href="https://htmlacademy.ru"><span class="nav-menu__text">Html Academy</span></a></li>
           </ul>
     </nav>
-    <a class="main-header__logo" href="index.html"><img src="img/images/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo" href="index.html"><img src="img/header/logo.png" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
@@ -44,14 +53,14 @@
     <section class="catalog-content">
         <ul class="catalog-content__list cards-list">
           <li class="cards-list__item cards-list__item--main">
-            <div class="cards-list__item-img-wrapper">
+            <div class="cards-list__item-img-wrapper cards-list__item-img-wrapper--main">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="/img/images/cards-photo/card-01-d.jpg 1x, img/images/catalog/cards-photo/card-01-d@2x.jpg 2x">
+                srcset="img/catalog/cards-photo/card-01-d.jpg 1x, img/catalog/cards-photo/card-01-d@2x.jpg 2x">
               <source media="(min-width: 768px)"
-              srcset="img/images/catalog/cards-photo/card-01-t.jpg 1x, img/images/catalog/cards-photo/card-01-t@2x.jpg 2x">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-01-m.jpg"
-            srcset="img/images/catalog/cards-photo/card-01-m@2x.jpg 2x" alt="Неродные просторы."
+              srcset="img/catalog/cards-photo/card-01-t.jpg 1x, img/catalog/cards-photo/card-01-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/catalog/cards-photo/card-01-m.jpg"
+            srcset="img/catalog/cards-photo/card-01-m@2x.jpg 2x" alt="Неродные просторы."
               width="280" height="280">
             </picture>
           </div>
@@ -76,11 +85,11 @@
             <div class="cards-list__item-img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="img/images/catalog/cards-photo/card-02-d.jpg 2x, img/images/catalog/cards-photo/card-02-d@2x.jpg 2x">
+                  srcset="img/catalog/cards-photo/card-02-d.jpg 2x, img/catalog/cards-photo/card-02-d@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                srcset="img/images/catalog/cards-photo/card-02-t.jpg 1x, img/images/catalog/cards-photo/card-02-t@2x.jpg 2x">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-02-m.jpg"
-            srcset="img/images/catalog/cards-photo/card-02-m@2x.jpg 2x"
+                srcset="img/catalog/cards-photo/card-02-t.jpg 1x, img/catalog/cards-photo/card-02-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/catalog/cards-photo/card-02-m.jpg"
+            srcset="img/catalog/cards-photo/card-02-m@2x.jpg 2x"
              alt="Местная растительность." width="280" height="280">
               </picture>
               </div>
@@ -105,11 +114,11 @@
             <div class="cards-list__item-img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="img/images/catalog/cards-photo/card-03-d.jpg 2x, img/images/catalog/cards-photo/card-03-d@2x.jpg 2x">
+                  srcset="img/catalog/cards-photo/card-03-d.jpg 2x, img/catalog/cards-photo/card-03-d@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                srcset="img/images/catalog/cards-photo/card-03-t.jpg 1x, img/images/catalog/cards-photo/card-03-t@2x.jpg 2x">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-03-m.jpg"
-            srcset="img/images/catalog/cards-photo/card-03-m@2x.jpg 2x"
+                srcset="img/catalog/cards-photo/card-03-t.jpg 1x, img/catalog/cards-photo/card-03-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/catalog/cards-photo/card-03-m.jpg"
+            srcset="img/catalog/cards-photo/card-03-m@2x.jpg 2x"
             alt="Дорога на север."
               width="280" height="280">
               </picture>
@@ -135,10 +144,10 @@
             <div class="cards-list__item-img-wrapper">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="img/images/catalog/cards-photo/card-04-d.jpg 2x, img/images/catalog/cards-photo/card-04-d@2x.jpg 2x">
+                  srcset="img/catalog/cards-photo/card-04-d.jpg 2x, img/catalog/cards-photo/card-04-d@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                srcset="img/images/catalog/cards-photo/card-04-t.jpg 1x, img/images/catalog/cards-photo/card-04-t@2x.jpg 2x">
-            <img class="cards-list__item-img" src="img/images/catalog/cards-photo/card-04-m.jpg" srcset="img/images/catalog/cards-photo/card-04-m@2x.jpg 2x"
+                srcset="img/catalog/cards-photo/card-04-t.jpg 1x, img/catalog/cards-photo/card-04-t@2x.jpg 2x">
+            <img class="cards-list__item-img" src="img/catalog/cards-photo/card-04-m.jpg" srcset="img/catalog/cards-photo/card-04-m@2x.jpg 2x"
              alt="Мост дьявола." width="280"
               height="280">
               </picture>
@@ -168,7 +177,7 @@
         очередной раз!</p>
       <div class="catalog-offer__presentation">
       <button class="catalog-offer__play"><span class="visually-hidden">Воспроизвести.</span></button>
-      <video class="catalog-offer__video" poster="img/images/catalog/video.jpg" width="800"
+      <video class="catalog-offer__video" poster="img/catalog/video.jpg" width="800"
         height="500"></video>
       </div>
     </section>
@@ -182,11 +191,7 @@
     </ul>
     <div class="footer__copyright-wrapper copyright">
       <p class="copyright__title">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/"><svg width="28" height="33" viewBox="0 0 28 33"
-          fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z"
-            fill="black" />
+      <a class="copyright__link" href="https://htmlacademy.ru/"><svg class="copyright__link-icon" width="28" height="33"><use xlink:href="#academy-icon"></use>
         </svg>
       </a>
     </div>

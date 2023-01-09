@@ -1,20 +1,25 @@
+.catalog-offer {
+  margin-bottom: -10px;
+}
+
 .catalog-offer__title {
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 37px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: $title-font-size;
 }
 
 .catalog-offer__description {
+  width: 240px;
   text-align: center;
-  margin: 0;
+  margin: auto;
 }
 
 .catalog-offer__presentation {
   position: relative;
   width: 280px;
   height: 177px;
-  margin-top: 27px;
+  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -31,15 +36,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  background-image: url("/img/images/catalog/play.svg");
+  background-image: url("/img/catalog/play.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-offer__title {
-    margin-top: 58px;
-    margin-bottom: 39px;
+    margin-top: 28px;
+    margin-bottom: 35px;
     font-size: 30px;
   }
 
@@ -51,33 +56,36 @@
   .catalog-offer__presentation {
     width: 648px;
     height: 500px;
-    margin-top: 67px;
+    margin-top: 40px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 95px;
   }
 
   .catalog-offer__video {
     width: 648px;
     height: 500px;
+    background-color: #000000;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-offer__title {
-    margin-top: 60px;
-    margin-bottom: 38px;
+    margin-top: 30px;
   }
 
   .catalog-offer__description {
     width: 445px;
-    margin: 0 auto;
+    margin-top: 4px;
+    margin-left: 375px;
   }
 
   .catalog-offer__presentation {
     width: 800px;
-    margin-top: 64px;
+    margin-top: 84px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 80px;
   }
 
   .catalog-offer__video {
