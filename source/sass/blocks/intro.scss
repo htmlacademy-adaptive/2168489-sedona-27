@@ -21,7 +21,7 @@
 .intro__main-title {
   width: 265px;
   margin: 0;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-left: 27px;
   padding: 0;
   text-align: center;
@@ -45,11 +45,11 @@
 
   .intro__content {
     min-height: 518px;
-    background-image: url("/img/main/intro-triangle-d.svg"), url("/img/main/intro-bg-t.jpg");
+    background-image: url("/img/main/intro-triangle-tablet.svg"), url("/img/main/intro-bg-t.jpg");
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/main/intro-triangle-d.svg"), url("/img/main/intro-bg-t@2x.jpg");
+      background-image: url("/img/main/intro-triangle-tablet.svg"), url("/img/main/intro-bg-t@2x.jpg");
     }
   }
 

@@ -81,7 +81,7 @@
 
   .cards-list__item-img {
     margin-top: 0;
-    height: 267px;
+    height: auto;
   }
 
   .cards-list__item-img-wrapper {
@@ -89,8 +89,8 @@
     height: 267px;
 
     &--main {
-      width: 640px;
-      height: 400px;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -164,7 +164,7 @@
 
     &--main {
       width: 1160px;
-      top: 200px;
+      top: 320px;
     }
   }
 
@@ -184,5 +184,14 @@
 
   .cards-list__item-likes {
     color: #ffffff;
+  }
+
+  .cards-list__item-title {
+    margin-top: 2px;
+    margin-left: -2px;
+  }
+
+  .cards-list__item-button-icon {
+    stroke: #ffffff;
   }
 }

@@ -22,10 +22,14 @@
   }
 
   &--first {
-    padding-top: 50px;
+    padding-top: 52px;
     background-image: url("/img/main/benefits-item-triagle.svg");
     background-repeat: no-repeat;
     background-position: top;
+  }
+
+  &--second {
+    padding-top: 22px;
   }
 
   &--other {
@@ -35,7 +39,7 @@
 
 .benefits__item-title {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: $title-font-size;
   margin: 0;
 }
@@ -55,6 +59,7 @@
   line-height: 20px;
 
   &--other {
+    width: 250px;
     padding-bottom: 24px;
   }
 }
@@ -70,6 +75,10 @@
 
 .benefits__item-text {
   margin-top: 1px;
+
+  &--other {
+    padding-top: 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -89,6 +98,7 @@
     }
 
     &--second {
+      padding-top: 0;
       width: 768px;
       display: flex;
       flex-direction: row-reverse;
@@ -119,6 +129,12 @@
     text-align: center;
     margin-top: 58px;
     margin-left: -2px;
+
+    &--other {
+      padding-top: 0;
+      margin-top: 50px;
+      line-height: 28px;
+    }
   }
 
   .benefits__item-number {
@@ -142,6 +158,10 @@
     width: 195px;
     text-align: center;
     margin-left: 30px;
+
+    &--other {
+      width: 190px;
+    }
   }
 }
 
