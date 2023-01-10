@@ -5,24 +5,28 @@
 
 .cards-list__item {
   list-style-type: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
   border-top: 1px solid #e5e5e5;
 
   &:nth-last-of-type(1) {
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
   }
 }
 
 .cards-list__item-img {
   display: block;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .cards-list__item-title {
   font-size: 14px;
   margin: 0;
+  margin-top: 12px;
 }
 
 .cards-list__item-author {
@@ -36,7 +40,7 @@
   display: flex;
   align-items: center;
   background-color: transparent;
-  margin-top: 11px;
+  margin-top: 15px;
 }
 
 .cards-list__item-likes {
@@ -68,6 +72,26 @@
       grid-row-end: 1;
       width: 648px;
     }
+
+    &:nth-last-of-type(1) {
+      border-bottom: none;
+      padding-bottom: none;
+    }
+  }
+
+  .cards-list__item-img {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .cards-list__item-img-wrapper {
+    width: 324px;
+    height: 267px;
+
+    &--main {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .cards-list__item-wrapper {
@@ -78,11 +102,24 @@
     padding-right: 20px;
     width: 284px;
     background-color: #f2f2f2;
-    min-height: 80px;
+    height: 80px;
 
     &--main {
       width: 610px;
     }
+  }
+
+  .cards-list__item-title {
+    margin-top: 10px;
+    margin-left: -2px;
+  }
+
+  .cards-list__item-button {
+    margin-top: 4px;
+  }
+
+  .cards-list__item:nth-child(3) .cards-list__item-wrapper {
+    background-color: #eaeaea;
   }
 }
 
@@ -119,20 +156,42 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 360px;
-    height: 80px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
     position: absolute;
-    top: 200px;
+    top: 188px;
     color: #ffffff;
 
     &--main {
       width: 1160px;
-      top: 200px;
+      top: 320px;
     }
+  }
+
+  .cards-list__item-img-wrapper {
+    width: 400px;
+    height: 267px;
+
+    &--main {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+
+  .cards-list__item:nth-child(3) .cards-list__item-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .cards-list__item-likes {
     color: #ffffff;
+  }
+
+  .cards-list__item-title {
+    margin-top: 2px;
+    margin-left: -2px;
+  }
+
+  .cards-list__item-button-icon {
+    stroke: #ffffff;
   }
 }
