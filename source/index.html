@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - небольшой туристический городок в Аризоне</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
@@ -59,7 +59,7 @@
     <symbol viewBox="0 0 28 33" id="academy-icon">
     <path
       d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z"
-      fill="black" />
+       />
     </symbol>
     </svg>
   <div class="container">
@@ -73,7 +73,7 @@
         <li class="nav-menu__item"><a class="nav-menu__link" href="https://htmlacademy.ru"><span class="nav-menu__text">Html Academy</span></a></li>
       </ul>
     </nav>
-    <a class="main-header__logo"><img src="img/header/logo.png" alt="Логотип Седоны" width="185"
+    <a class="main-header__logo"><img src="img/header/logo.svg" alt="Логотип Седоны" width="185"
         height="96"></a>
   </header>
   <main class="main-container">
@@ -98,9 +98,6 @@
             </div>
             <div class="benefits__item-img-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main/card-01-desktop.webp 1x, img/main/card-01-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/main/card-01-tablet.webp 1x, img/main/card-01-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/main/card-01-mobile.webp 1x, img/main/card-01-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/main/card-01-d.jpg 1x, img/main/card-01-d@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -187,7 +184,7 @@
       <h2 class="offer__title">Заинтересовались?</h2>
       <p class="offer__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Cедоне</p>
-      <button class="offer__button button" type="submit">
+      <button class="offer__button button" type="button">
         Найти гостиницу
       </button>
       <iframe class="offer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.57784261296!2d-111.81264799774165!3d34.85441236209134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671390993847!5m2!1sru!2sru"
@@ -199,13 +196,14 @@
   <footer class="footer">
     <h2 class="footer__title">#VisitSedona</h2>
     <ul class="footer__social social">
-      <li class="social__item social__item--vk"><a class="social__link" href="#"></a></li>
-      <li class="social__item social__item--tg"><a class="social__link" href="#"></a></li>
-      <li class="social__item social__item--yt"><a class="social__link" href="#"></a></li>
+      <li class="social__item"><a class="social__link social__link--vk" href="#"></a></li>
+      <li class="social__item"><a class="social__link social__link--tg" href="#"></a></li>
+      <li class="social__item"><a class="social__link social__link--yt" href="#"></a></li>
     </ul>
     <div class="footer__copyright-wrapper copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/">
       <p class="copyright__title">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/"><svg class="copyright__link-icon" width="28" height="33"><use xlink:href="#academy-icon"></use></svg>
+      <svg class="copyright__link-icon" width="28" height="33"><use xlink:href="#academy-icon"></use></svg>
       </a>
     </div>
   </footer>
