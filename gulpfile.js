@@ -31,7 +31,7 @@ export const styles = () => {
 
 // HTML
 
- const html = () => {
+  const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
@@ -54,6 +54,7 @@ export const styles = () => {
 }
 
  const copyImages = () => {
+  const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 }
