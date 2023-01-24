@@ -25,9 +25,6 @@
   margin-bottom: -8px;
   background-image: url("/img/catalog/video-mobile.jpg");
   background-repeat: no-repeat;
-  background-image: url("/img/catalog/video/video-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .catalog-offer__video {
@@ -67,14 +64,6 @@
     margin-right: 60px;
     margin-bottom: 45px;
     background-image: url("/img/catalog/video-tablet.jpg");
-    background-image: url("/img/catalog/video/video-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .catalog-offer__video {
-    width: 648px;
-    height: 500px;
   }
 }
 
@@ -91,20 +80,10 @@
 
   .catalog-offer__presentation {
     width: 800px;
-    height: 500px;
     margin-top: 84px;
     margin-left: 200px;
     margin-right: 200px;
-    margin-bottom: 75px;
+    margin-bottom: 90px;
     background-image: url("/img/catalog/video-desktop.jpg");
-    margin-bottom: 80px;
-    background-image: url("/img/catalog/video/video-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .catalog-offer__video {
-    width: 800px;
-    height: auto;
   }
 }

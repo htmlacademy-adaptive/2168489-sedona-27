@@ -94,7 +94,7 @@
   }
 
   .advantage-list__item-whitespace {
-    display: none;
+    display: block;
   }
 }
 
@@ -130,9 +130,5 @@
     width: 300px;
     text-align: center;
     margin-top: 25px;
-  }
-
-  .advantage-list__item-whitespace {
-    display: block;
   }
 }
