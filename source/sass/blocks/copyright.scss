@@ -9,3 +9,13 @@
   display: block;
   margin-right: 12px;
 }
+
+.copyright__link {
+  margin-top: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-left: 50px;
+  }
+}

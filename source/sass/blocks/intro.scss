@@ -4,11 +4,11 @@
 }
 
 .intro__content {
-  min-height: 390px;
+  min-height: 389px;
   background-image: url("/img/main/intro-triangle.svg"), url("/img/main/intro-bg.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
-  background-color: #ffffff;
+  background-color: #b03b00;
 }
 
 .intro__content-slogan {
@@ -21,7 +21,7 @@
 .intro__main-title {
   width: 265px;
   margin: 0;
-  margin-top: 28px;
+  margin-top: 31px;
   margin-left: 27px;
   padding: 0;
   text-align: center;
@@ -54,7 +54,7 @@
   }
 
   .intro__content-slogan {
-    margin-left: 125px;
+    margin-left: 135px;
     padding-top: 75px;
     width: 500px;
     height: 350px;
@@ -63,13 +63,13 @@
   .intro__main-title {
     font-size: 21px;
     width: 524px;
-    margin-top: 52px;
-    margin-left: 115px;
+    margin-top: 48px;
+    margin-left: 118px;
   }
 
   .intro__main-description {
     width: 524px;
-    margin-top: 28px;
+    margin-top: 30px;
     margin-left: 120px;
     margin-bottom: 55px;
   }
@@ -95,12 +95,12 @@
   .intro__main-title {
     width: 524px;
     margin-top: 60px;
-    margin-left: 332px;
+    margin-left: 338px;
   }
 
   .intro__main-description {
     width: 524px;
-    margin-left: 335px;
+    margin-left: 338px;
     margin-bottom: 44px;
   }
 }

@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   background-color: inherit;
-  color: #000000;
   list-style-type: none;
 }
 
@@ -16,34 +15,33 @@
   padding-right: 18px;
 
   &:nth-child(3) {
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
 }
 
 .advantage-list__item-wrapper {
-  margin-top: 35px;
+  margin-top: 17px;
   margin-left: 10px;
 }
 
 .advantage-list__item-title {
+  color: #000000;
   font-size: $title-font-size;
-  color: hsl(0, 0%, 0%);
-  margin-top: 2px;
-  margin-left: -5px;
   padding: 0;
 }
 
 .advantage-list__item-subtitle {
+  color: #000000;
   margin: 0;
-  margin-top: 20px;
-  margin-left: -3px;
+  margin-top: 19px;
 }
 
 .advantage-list__item-img {
-  margin-top: 9px;
-  margin-left: 2px;
-  width: 75px;
-  height: 75px;
+  margin-top: 7px;
+}
+
+.advantage-list__item-whitespace {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,33 +57,44 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-top: 60px;
-    padding-bottom: 65px;
+    /*padding-bottom: 59px;*/
 
     &:nth-child(3) {
-      padding-bottom: 64px;
+      padding-bottom: 0;
     }
   }
 
   .advantage-list__item-wrapper {
-    margin-top: 15px;
+    margin-top: 17px;
     margin-left: 0;
   }
 
   .advantage-list__item-img {
+    width: 76px;
+    height: 76px;
     margin: 0;
+    margin-top: 60px;
     padding: 0;
   }
 
   .advantage-list__item-title {
-    font-size: 22px;
+    font-size: 21px;
     text-align: center;
+    margin: 0;
+    margin-right: 5px;
   }
 
   .advantage-list__item-subtitle {
-    width: 180px;
     text-align: center;
-    margin-top: 25px;
+    margin-left: 0;
+    margin-top: 27px;
+    margin-right: 6px;
+    width: 175px;
+    margin-bottom: 64px;
+  }
+
+  .advantage-list__item-whitespace {
+    display: none;
   }
 }
 
@@ -101,8 +110,6 @@
     width: 400px;
     flex-direction: column;
     align-items: center;
-    padding-top: 69px;
-    padding-bottom: 69px;
   }
 
   .advantage-list__item-wrapper {
@@ -112,16 +119,20 @@
 
   .advantage-list__item-img {
     width: 78px;
-    height: 72px;
+    height: 78px;
   }
 
   .advantage-list__item-title {
-    margin-top: -18px;
+    margin-top: -10px;
   }
 
   .advantage-list__item-subtitle {
     width: 300px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 25px;
+  }
+
+  .advantage-list__item-whitespace {
+    display: block;
   }
 }
