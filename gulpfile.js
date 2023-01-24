@@ -75,19 +75,19 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/**/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
   inlineSvg: true
- }))
- .pipe(rename('sprite.svg'))
- .pipe(gulp.dest('build/img'));
+}))
+.pipe(rename('sprite.svg'))
+.pipe(gulp.dest('build/img'));
 }
 
 // Copy
 
- const copy = (done) => {
+const copy = (done) => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
