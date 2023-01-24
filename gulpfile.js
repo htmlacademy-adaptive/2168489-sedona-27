@@ -53,6 +53,7 @@ export const styles = () => {
   .pipe(gulp.dest('build/img'));
 }
 
+ const copyImages = () => {
   const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
@@ -80,14 +81,14 @@ const svg = () => {
   .pipe(svgo())
   .pipe(svgstore({
   inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
+ }))
+ .pipe(rename('sprite.svg'))
+ .pipe(gulp.dest('build/img'));
 }
 
 // Copy
 
-  const copy = (done) => {
+ const copy = (done) => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',

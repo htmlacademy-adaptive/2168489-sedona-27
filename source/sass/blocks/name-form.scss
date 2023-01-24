@@ -18,20 +18,23 @@
 .name-form__name {
   margin-left: 14px;
   line-height: 21px;
-  font-size: 15px;
+  font-size: 14px;
   display: block;
   color: #333333;
 }
 
 .name-form__input {
+  font-family: "PTSans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
   width: 264px;
   height: 58px;
   background-color: #f2f2f2;
   border: none;
   padding-left: 16px;
   margin-bottom: 14px;
-  font-size: 16px;
-  font-weight: 700;
+
 
   &:hover {
     background-color: #e5e5e5;
@@ -39,12 +42,21 @@
 
   &:active {
     background-color: #ffffff;
-    border: #e5e5e5 4px solid;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    height: 50px;
   }
 }
 
 .name-form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
 }
 
 
@@ -60,20 +72,21 @@
     display: block;
     font-size: 21px;
     line-height: 26px;
-    margin-left: -10px;
     margin-bottom: 30px;
+    margin-left: 80px;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .name-form {
     width: 543px;
-    margin-top: 40px;
+    margin-top: 35px;
     border-right: 1px solid #dbdbdb;
   }
 
   .name-form__title {
-    margin-left: -28px;
+    margin-left: 165px;
   }
 
   .name-form__input {

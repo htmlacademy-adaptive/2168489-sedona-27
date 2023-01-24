@@ -24,23 +24,26 @@
 }
 
 .cards-list__item-title {
+  line-height: 21px;
   font-size: 14px;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 13px;
 }
 
 .cards-list__item-author {
-  font-size: 12px;
+  line-height: 21px;
+  font-size: 14px;
   text-transform: none;
   margin: 0;
 }
 
 .cards-list__item-button {
+  line-height: 21px;
   border: none;
   display: flex;
   align-items: center;
   background-color: transparent;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .cards-list__item-button-icon {
@@ -52,7 +55,14 @@
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.cards-list__item-button-icon {
+  margin-left: -2px;
+  fill: #000000;
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,7 +130,8 @@
   }
 
   .cards-list__item-button {
-    margin-top: 4px;
+    margin-top: -4px;
+    margin-right: -5px;
   }
 
   .cards-list__item:nth-child(3) .cards-list__item-wrapper {
@@ -164,7 +175,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
     position: absolute;
-    top: 188px;
+    top: 186px;
     color: #ffffff;
 
     &--main {
@@ -193,7 +204,11 @@
 
   .cards-list__item-title {
     margin-top: 2px;
-    margin-left: -2px;
+    margin-left: 2px;
+  }
+
+  .cards-list__item-author {
+    margin-left: 3px;
   }
 
   .cards-list__item-button-icon {
