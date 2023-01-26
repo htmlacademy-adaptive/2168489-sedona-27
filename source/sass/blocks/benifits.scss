@@ -49,7 +49,7 @@
 }
 
 .benefits__item-subtitle {
-  width: 270px;
+  width: 280px;
   text-align: center;
   margin: auto;
   padding-bottom: 40px;
@@ -79,6 +79,11 @@
 
 .benefits__item-whitespace {
   display: none;
+
+
+  &--first {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -167,7 +172,11 @@
   .benefits__item-whitespace {
     display: block;
 
-    &--key {
+    &--first {
+      display: none;
+    }
+
+    &--second {
       display: none;
     }
   }
@@ -231,7 +240,11 @@
   }
 
   .benefits__item-whitespace {
-    &--key {
+    &--first {
+      display: block;
+    }
+
+    &--second {
       display: block;
     }
   }
