@@ -20,10 +20,17 @@
     }
   }
 
+  .footer__title {
+    &--main {
+      padding-right: 20px;
+    }
+  }
+
   .footer__copyright-wrapper {
     align-items: center;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .footer {
@@ -38,7 +45,7 @@
 
   .footer__title {
     &--main {
-      padding-right: 10px;
+      padding-right: 12px;
     }
   }
 }
