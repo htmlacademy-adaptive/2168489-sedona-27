@@ -44,10 +44,10 @@
     background-color: #ffffff;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    height: 50px;
+    outline: 4px solid #e5e5e5;
+    outline-offset: 2px;
   }
 }
 

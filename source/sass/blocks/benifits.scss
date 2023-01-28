@@ -49,7 +49,7 @@
 }
 
 .benefits__item-subtitle {
-  width: 270px;
+  width: 280px;
   text-align: center;
   margin: auto;
   padding-bottom: 40px;
@@ -79,6 +79,11 @@
 
 .benefits__item-whitespace {
   display: none;
+
+
+  &--first {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -127,7 +132,7 @@
     margin-left: 0;
 
     &--other {
-      margin-top: 50px;
+      margin-top: 40px;
     }
   }
 
@@ -138,7 +143,7 @@
     margin-bottom: 25px;
 
     &--other {
-      margin-top: 10px;
+      margin-top: 13px;
     }
   }
 
@@ -156,7 +161,7 @@
 
   .benefits__item-subtitle {
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     margin: 0;
     width: 195px;
     text-align: center;
@@ -167,7 +172,11 @@
   .benefits__item-whitespace {
     display: block;
 
-    &--key {
+    &--first {
+      display: none;
+    }
+
+    &--second {
       display: none;
     }
   }
@@ -231,7 +240,11 @@
   }
 
   .benefits__item-whitespace {
-    &--key {
+    &--first {
+      display: block;
+    }
+
+    &--second {
       display: block;
     }
   }

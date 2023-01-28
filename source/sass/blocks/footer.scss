@@ -14,6 +14,16 @@
     align-items: center;
     padding-left: 60px;
     padding-right: 60px;
+
+    &--main {
+      padding-right: 80px;
+    }
+  }
+
+  .footer__title {
+    &--main {
+      padding-right: 20px;
+    }
   }
 
   .footer__copyright-wrapper {
@@ -21,14 +31,21 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .footer {
     padding-top: 3px;
     padding-left: 120px;
     padding-right: 120px;
+
+    &--main {
+      padding-right: 135px;
+    }
   }
 
-  .footer__copyright-wrapper {
-    align-items: center;
+  .footer__title {
+    &--main {
+      padding-right: 12px;
+    }
   }
 }
